@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+  gap: 30px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 15px;
+}
+
+.borders {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  padding: 15px;
+  gap: 15px;
+}
+
+.input-border {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+input[type="number"] {
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  outline: none;
+}
+
+select {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  gap: 5px;
+  outline: none;
+  width: 30%;
+}
+
+input[type="color"] {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.sizes {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+}
+
+.size {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+.right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test {
+  width: 150px;
+  height: 150px;
+  background: #000;
+  border-style: solid;
+}
+
+.result {
+  grid-column: span 2;
+  width: 100%;
+  background-color: #282c34;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  color: #fff;
+  position: relative;
+}
+
+.copy {
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  cursor: pointer;
+}
+
